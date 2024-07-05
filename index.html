@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>Age Calculator | Frontend mentor</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="date-selector">
+                <label for="day-input">DAY</label>
+                <label for="month-input">MONTH</label>
+                <label for="year-input">YEAR</label>
+                <button id="result-button" onclick="getAge()">
+                    <img src="./assets/icon-arrow.svg" alt="enter-button">
+                </button>
+                <input type="number" name="day" id="day-input" placeholder="DD">
+                <input type="number" name="month" id="month-input" placeholder="MM">
+                <input type="number" name="year" id="year-input" placeholder="YYYY">
+                <p id="day-error"></p>
+                <p id="month-error"></p>
+                <p id="year-error"></p>
+            </div>
+            <div class="result-display">
+                <p><span id="age-years">--</span> years</p>
+                <p><span id="age-months">--</span> months</p>
+                <p><span id="age-days">--</span> days</p>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+body {
+    background-color: hsl(0, 0%, 94%);
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: auto;
+    width: 40%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 35% 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.date-selector {
+    font-family: Poppins;
+    font-weight: 400;
+    height: 35%;
+    width: 85%;
+    display: grid;
+    grid: 30% 50% 20% / 30% 30% 30%;
+    border-bottom: 2px solid hsl(0, 0%, 86%);
+    padding: 30px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.date-selector label {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    align-self: end;
+    color: hsl(0, 1%, 44%);
+    margin: 5px 0;
+}
+
+.date-selector input {
+    width: 65%;
+    height: 50%;
+    align-self: center;
+    border: 2px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    padding: 10px;
+    color: hsl(0, 0%, 8%);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.date-selector input:focus {
+    outline-color: hsl(259, 100%, 65%);
+}
+
+.date-selector input::placeholder {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    padding-top: 20px;
+}
+
+.date-selector p {
+    /* display: none; */
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px;
+}
+
+#result-button {
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    grid-area: 1 / 4 / span 3 / 4;
+    align-self: end;
+    justify-self: end;
+    position: absolute;
+    bottom: -70px;
+}
+
+#result-button img {
+    height: 55%;
+}
+
+#result-button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.result-display {
+    height: 60%;
+    width: 85%;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 4.5em;
+    font-weight: 800;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+    margin: 30px 0;
+}
+
+.result-display * {
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.result-display span {
+    color: hsl(259, 100%, 65%);
+}
