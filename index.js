@@ -1,4 +1,5 @@
 function getAge() {
+  clearStyles();
   document.getElementById("age-years").textContent = "--";
   document.getElementById("age-months").textContent = "--";
   document.getElementById("age-days").textContent = "--";
@@ -50,20 +51,20 @@ function getAge() {
       }
     }
 
-    for (i = 0; i < 3; i++) {
-      document.getElementsByTagName("input")[i].style.borderColor =
-        "hsl(0, 0%, 86%)";
-      document.querySelectorAll(`label`)[i].style.color = "hsl(0, 1%, 44%)";
-      document.querySelectorAll(`.date-selector p`)[i].innerText = "";
-    }
-    
     document.getElementById("age-years").textContent = age;
     document.getElementById("age-months").textContent = monthDiff;
     document.getElementById("age-days").textContent = daysDiff;
   }
 }
 
-function clearStyles() {}
+function clearStyles() {
+  for (i = 0; i < 3; i++) {
+    document.getElementsByTagName("input")[i].style.borderColor =
+      "hsl(0, 0%, 86%)";
+    document.querySelectorAll(`label`)[i].style.color = "hsl(0, 1%, 44%)";
+    document.querySelectorAll(`.date-selector p`)[i].innerText = "";
+  }
+}
 
 function displayError(fieldName, value) {
   let errMsg = "";

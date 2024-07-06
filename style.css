@@ -1,5 +1,6 @@
 body {
     background-color: hsl(0, 0%, 94%);
+    font-size: 1.16vw;
 }
 
 main {
@@ -34,7 +35,7 @@ input::-webkit-inner-spin-button {
     display: grid;
     grid: 30% 50% 20% / 30% 30% 30%;
     border-bottom: 2px solid hsl(0, 0%, 86%);
-    padding: 30px 0;
+    padding: 2em 0;
     margin-top: 20px;
     position: relative;
 }
@@ -66,7 +67,7 @@ input::-webkit-inner-spin-button {
 
 .date-selector input::placeholder {
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: hsl(0, 1%, 44%);
     padding-top: 20px;
@@ -121,4 +122,97 @@ input::-webkit-inner-spin-button {
 
 .result-display span {
     color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+
+    .result-display {
+        font-size: 5em;
+    }
+
+    #result-button {
+        height: 70px;
+        width: 70px;
+        bottom: -60px;
+    }
+
+    .date-selector p {
+        font-size: 14px;
+    }
+
+    .date-selector input {
+        height: 40%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    .container {
+        width: 60%;
+    }
+
+    .result-display {
+        font-size: 6.5em;
+    }
+
+    .date-selector input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    #result-button {
+        height: 70px;
+        width: 70px;
+        bottom: -55px;
+    }
+
+    .date-selector p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .date-selector input {
+        height: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 85%;
+    }
+
+    .result-display {
+        font-size: 10em;
+        margin: 50px 0;
+    }
+
+    .date-selector {
+        padding: 4em;
+    }
+
+    .date-selector input::placeholder {
+        font-size: 1rem;
+    }
+
+    #result-button {
+        height: 55px;
+        width: 55px;
+        bottom: -50px;
+        right: 300%;
+    }
+
+    .date-selector p {
+        font-size: 12px;
+    }
+
+    .date-selector input {
+        height: 35%;
+        font-size: 18px;
+    }
+
+    .date-selector label {
+        margin: 0;;
+    }
+
 }
